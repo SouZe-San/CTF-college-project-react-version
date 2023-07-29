@@ -1,0 +1,85 @@
+export const userDetails = {
+  teamId: "TNU2730",
+  teamName: "The Intruders",
+  members: ["Ram Chandra", "Sita Devi", "Laxman Dev"],
+};
+
+export const rankersList = [
+  {
+    teamName: "Team TCP",
+    teamId: "TNU2034",
+    rank: 66,
+    points: 136,
+    solvedChallenges: ["digital", "haptic"],
+  },
+  {
+    teamName: "Team Inverse",
+    teamId: "TNU2036",
+    rank: 11,
+    points: 445,
+    solvedChallenges: ["auxiliary", "haptic", "digital"],
+  },
+  {
+    teamName: "Team heuristic",
+    teamId: "TNU2870",
+    rank: 7,
+    points: 577,
+    solvedChallenges: ["auxiliary", "mobile"],
+  },
+  {
+    teamName: "Team payment",
+    teamId: "TNU2340",
+    rank: 8,
+    points: 749,
+    solvedChallenges: ["mobile", "haptic"],
+  },
+  {
+    teamName: "Team synthesizing",
+    teamId: "TNU2450",
+    rank: 10,
+    points: 107,
+    solvedChallenges: ["haptic", "open-source", "neural"],
+  },
+  {
+    teamName: "Team Kentucky",
+    teamId: "TNU2950",
+    rank: 9,
+    points: 101,
+    solvedChallenges: ["1080p"],
+  },
+  {
+    teamName: "The Intruders",
+    teamId: "TNU2730",
+    rank: 1,
+    points: 2500,
+    solvedChallenges: ["FRC", "peeakabo", "you are jailed", "leech"],
+  },
+  {
+    teamName: "r3d m00n",
+    teamId: "TNU2480",
+    rank: 3,
+    points: 700,
+    solvedChallenges: ["peeakabo", "leech"],
+  },
+  {
+    teamName: "We Are GreenHats",
+    teamId: "TNU2670",
+    rank: 4,
+    points: 900,
+    solvedChallenges: ["FRC", "super dragon", "you are jailed"],
+  },
+  {
+    teamName: "Space Hackers",
+    teamId: "TNU2047",
+    rank: 2,
+    points: 700,
+    solvedChallenges: ["FRC", "leech", "you are jailed"],
+  },
+  {
+    teamName: "BoomBoomBoom",
+    teamId: "TNU2059",
+    rank: 5,
+    points: 250,
+    solvedChallenges: ["peeakabo", "super dragon"],
+  },
+];
