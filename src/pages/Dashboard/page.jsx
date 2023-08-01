@@ -1,12 +1,20 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import RankingBlock from "../../components/Dashboard/RankingBlock";
+import NotValid from "../../components/notValid/NotValid";
+
+import { userDetails, rankersList } from "../../assets/Json/dashboard";
 
 const page = () => {
+  // const userDetails = null;
+  // const rankersList = null;
   return (
-    <div>
-      <h1 className="text-white text-center text-5xl my-12 h-[65vh] noConnection pt-20 ">
-        Dashboard page
-      </h1>
+    <div className="mb-8 mt-32">
+      {rankersList && userDetails ? (
+        <RankingBlock rankersList={rankersList} userDetails={userDetails} />
+      ) : (
+        <NotValid />
+      )}
     </div>
   );
 };
