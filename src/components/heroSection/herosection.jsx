@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import "./heroSectionStyles.scss";
 
 function HeroSection() {
-
   return (
     <div className="heroSection" id="HeroSection">
       <div className="overlay">
@@ -11,12 +11,10 @@ function HeroSection() {
             <div className="lowerTitle">THE FLAG</div>
           </h1>
 
-          <p className="tagline">
-            Team up, stealth in, and secure victory in every game!
-          </p>
+          <p className="tagline">Team up, stealth in, and secure victory in every game!</p>
           <button className="ctaBtnOfHero">
             {" "}
-            <a href="/flags">Conquer The Flags</a>
+            <Link to="/challenges">Conquer The Flags</Link>
           </button>
         </div>
       </div>

@@ -1,10 +1,19 @@
 .flag_row {
 
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
 
-    border-color: #78f251;
+    // Old style
     border-radius: 5px;
     background: linear-gradient(90deg, rgba(52, 89, 44, 0.03) 19%, rgba(34, 84, 34, 0.56) 40%, rgba(23, 205, 27, 0.02) 96%);
+
+
+    // New Style
+    background: linear-gradient(90deg, rgba(91, 96, 90, 0.15) 19%, rgba(20, 47, 39, 0.38) 40%, rgba(77, 79, 77, 0.16) 96%);
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.4117647059);
+    margin: 1rem 0;
+    backdrop-filter: blur(30px);
+
 
     &:hover {
         background: rgba(25, 54, 46, 0.35);
@@ -64,6 +73,6 @@
 .horizon {
     margin: 1rem 0;
     height: 1px;
-    width: 100%;
+    width: 80%;
     background: linear-gradient(90deg, rgba(164, 164, 164, 0) 0%, rgba(163, 171, 170, 0.86) 50%, rgba(167, 169, 170, 0) 100%);
 }

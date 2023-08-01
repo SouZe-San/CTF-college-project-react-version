@@ -3,10 +3,15 @@
 import { useState, useEffect } from "react";
 
 // Server Actions
-//! import { flagSubmit, spawnCall } from "@/actions/challenges";
+// import { flagSubmit, spawnCall } from "@/actions/challenges";
+
+// Stylesheet
 import "./dropdown.scss";
-import Timer from "./Timer";
-const Dropdown = ({ dropdownRef, challenge, index }) => {
+
+// 30 minuit countdown timer
+import Timer from "../TImer/Timer";
+
+const Dropdown = ({ dropdownRef, challenge }) => {
   // State Variables
   const [isStart, setIsStart] = useState(false);
   const [flag, setFlag] = useState("");
@@ -97,7 +102,8 @@ const Dropdown = ({ dropdownRef, challenge, index }) => {
 
       const link = document.createElement("a");
       link.href = url;
-      link.download = `Flag_0${index}`; //  desired file name
+      // link.download = `Flag_0${index + 1}`; //  desired file name just a challenge No.
+      link.download = `${challenge.name}`; //  desired file name as Challenge Name Have
       link.click();
 
       URL.revokeObjectURL(url); // Clean up the object URL

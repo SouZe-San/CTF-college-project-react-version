@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-import ChallengeItem from "./ChallengeItem";
+import ChallengeItem from "../Challenge/ChallengeItem";
 
 // Stylesheet
 import "./challengeBlock.scss";
@@ -57,8 +57,8 @@ const Challenges = ({ challenges_array }) => {
   };
 
   return (
-    <div className="px-32 mb-8">
-      <div className="page_header ">
+    <div className="px-16 mb-8">
+      <div className="page_header px-12">
         <h1>Capture The Flag</h1>
         <h4>
           There some small flag Lets conquer those within the time. Read Instruction Carefully and
@@ -96,7 +96,7 @@ const Challenges = ({ challenges_array }) => {
         </button>
       </div>
 
-      <div className="flags border-[2px] border-[#78f251] py-6  rounded-[10px] px-2 mt-2">
+      <div className="flags  pb-6  rounded-[10px] px-2 mt-2">
         {ChallengesData.map((challenge, index) => {
           return (
             <div key={index}>

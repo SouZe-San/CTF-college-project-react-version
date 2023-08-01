@@ -4,7 +4,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import {gsap} from "gsap"
 // Components
-import Dropdown from "./Dropdown";
+import Dropdown from "../Dropdown/Dropdown";
 
 // StyleSheet
 import "./challenges.scss";
