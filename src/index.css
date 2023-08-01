@@ -28,6 +28,9 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.monumentFontStyle{
+  font-family: "Monument Extended";
+}
 body {
   scroll-behavior: smooth;
   /* background-color: #031315;

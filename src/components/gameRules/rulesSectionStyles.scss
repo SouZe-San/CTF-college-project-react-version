@@ -1,0 +1,56 @@
+// .active{ 
+//     display: block !important;
+//     opacity: 1 !important;
+// }
+
+.rulesSection {
+  width: 45%;
+  margin: 0 auto;
+  color: white;
+  font-family: "Monument Extended";
+  .ruleSectionTitle {
+    font-size: 3.4rem;
+    text-align: center;
+    color: #41c77f;
+  }
+  ul {
+    width: 100%;
+    max-width: 768px;
+    margin: 1.2rem 0;
+    li {
+      border-bottom: solid thin rgba(white, 0.2);
+      .faq {
+        display: flex;
+        padding: 15px;
+
+        justify-content: space-between;
+        align-items: center;
+        svg {
+          fill: #fff !important;
+          width: 1rem;
+          height: 1.5rem;
+        }
+      }
+      p{
+        padding: 15px;
+        // display: none;
+        // opacity: 0;
+        transition: all 0.3 ease-in-out;
+        line-height: normal!important;
+        letter-spacing:.02em ;
+        word-wrap: break-word;
+        hyphens:auto;
+        overflow-wrap:break-word;
+        -ms-hyphens:auto;
+        -moz-hyphens:auto;
+        -webkit-hyphens:auto;
+            }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .rulesSection {
+    width: 80%;
+  }
+}
