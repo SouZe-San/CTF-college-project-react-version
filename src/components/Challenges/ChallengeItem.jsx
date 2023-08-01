@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useState, useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import {gsap} from "gsap"
 // Components
 import Dropdown from "./Dropdown";
 
