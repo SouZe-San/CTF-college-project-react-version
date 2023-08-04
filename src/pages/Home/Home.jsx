@@ -7,13 +7,14 @@ import Topics from "../../components/topics/topics";
 import Rules from "../../components/gameRules/rules";
 import Footer from "../../components/footer/footer";
 import Branding from "../../components/branding/branding";
-
+import "./home.css"
 
 const home = () => {
+  const targetDate = new Date("2023-12-31T00:00:00");
   return (
-    <div>
+    <div className="main">
       <HeroSection/>
-      {/* <ContestCountdown/> */}
+      <ContestCountdown/>
       <Rewards/>
       <Topics/>
       <Rules/>

@@ -23,7 +23,7 @@ function Footer() {
             <h3 className="footerBtnTitle">Navigate</h3>
             <div className="navigate">
               <span>
-                <a className="btnInlineBlock" href="#HomeSection">
+                <a className="btnInlineBlock" href="#HeroSection">
                   Home
                 </a>
               </span>

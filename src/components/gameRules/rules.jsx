@@ -1,6 +1,5 @@
-"use client";
-import "./rulesSectionStyles.scss";
 
+import "./rulesSectionStyles.scss";
 import rulesBTS from "../../assets/title-stoked-bg/rulesTitleBgStoked.svg";
 import { useState } from "react";
 function Rules() {
@@ -14,34 +13,50 @@ function Rules() {
     },
     {
       id: 2,
-      question: "Disqualification criteria",
-      answer:
-        "All the above rules must have to be maintained at all cost any violation of any of the rules may lead to disqualification of the entire team.",
-    },
-    {
-      id: 3,
       question: "Relation between teams",
       answer: "Collaboration between competing teams is not allowed. ",
     },
     {
+      id: 3,
+      question: "Disqualification criteria",
+      answer:
+        "All the above rules must have to be maintained at all cost any violation of any of the rules may lead to disqualification of the entire team.",
+    }
+    ,
+    {
       id: 4,
-      question: "Search on your phone or tablet",
-      answer: "",
+      question: "Flag information",
+      answer: "The flag format is: CTF{th1s_i5_4_s4mpl3_fl4g}",
+    },
+    {
+      id: 5,
+      question: "Server bruteforcing",
+      answer: "You are not allowed to brute-force any challenge on a server, unless specified otherwise.",
+    },
+    {
+      id: 6,
+      question: "Id safety",
+      answer: "Do not share your login credentials with anyone other than your teammates.",
+    },
+    {
+      id: 7,
+      question: "Final verdict",
+      answer: "Regarding any disputes, the decision by admins will be final and have to be accepted by the contestents.",
     },
   ];
 
   // const rules = [
   //   "Treat everyone with respect in discussion groups. We do not tolerate any kind of harassment.",
   //   "You are not allowed to brute-force any challenge on a server, unless specified otherwise.",
-  //   "Do not share your login credentials with anyone other than your teammates.",
-  //   "Violation of any of the rules may lead to disqualification.",
-  //   "Regarding all disputes, the decision by admins is final.",
-  //   "Collaboration between competing teams is not allowed.",
+  //   "Do not share your login credentials with anyone other than your teammates.",  done
+  //   "Violation of any of the rules may lead to disqualification.", done
+  //   "Regarding all disputes, the decision by admins is final.", done
+  //   "Collaboration between competing teams is not allowed.",    done
   //   "Posting flags in any channel is strictly prohibited.",
-  //   "The flag format is: CTF{th1s_i5_4_s4mpl3_fl4g}",
+  //   "The flag format is: CTF{th1s_i5_4_s4mpl3_fl4g}",           done
   //   "Do not post write-ups until the CTF is over.",
-  //   "Do not hack the CTF infrastructure.",
-  //   "Team size is up to 4 players.",
+  //   "Do not hack the CTF infrastructure.", 
+  //   "Team size is up to 4 players.",                            done
   // ];
 
   return (
@@ -52,7 +67,7 @@ function Rules() {
           src={rulesBTS}
           alt="competion title svg"
         />
-        <h1 className="ruleSectionTitle sectionTitle">TERMS & RULES</h1>
+        <h1 className="ruleSectionTitle sectionTitle monumentFontStyle">TERMS & RULES</h1>
       </div>
 
       <ul>
@@ -62,9 +77,8 @@ function Rules() {
               className={`faq ${isActive ? "active" : ""}`}
               onClick={() => setIsActive(!isActive)}
             >
-              {rule.question}
+              ✱ {rule.question}
               <svg
-                className={isActive ? "active" : ""}
                 viewBox="0 0 320 512"
                 width="100"
                 title="angle-down"
@@ -73,7 +87,7 @@ function Rules() {
               </svg>
             </div>
             <p className={`answer  ${isActive ? "active" : ""}`}>
-              {rule.answer}
+              <span>hello</span>{rule.answer}
             </p>
           </li>
         ))}

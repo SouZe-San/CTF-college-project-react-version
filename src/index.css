@@ -26,6 +26,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* background-color: rgb(209, 178, 64); */
 }
 
 .monumentFontStyle{
@@ -35,9 +36,11 @@ body {
   scroll-behavior: smooth;
   /* background-color: #031315;
    background-color: #000000; */
-  background-color: #030f11;
+  /* background-color: #030f11; */
+  background: linear-gradient(331deg, #081A1A 50%, #313E3E);
   color: white;
   height: auto;
+  font-family: "Poppins" ;
 }
 /* @media (prefers-color-scheme: light) {
   :root {

@@ -12,15 +12,20 @@
 		top: 50%;
 		transform: translate(-50%,-50%);
 		.overlayContent{
+			.neoIntroduction{
+				width: 230px;
+				margin: 5px auto;
+
+			}
 			.heroSectionTitle{
 				font-size: clamp(3rem , 12vw + 1rem , 7.1rem);
 				// font-size: clamp(1.875rem,3.125vw + 1.25rem,4.0625rem);
-				line-height: .9;
 				font-family:  "Monument Extended" , "Poppins";
 				letter-spacing: -1px;
-				line-height: .9;
+				line-height: .8;
 				.lowerTitle{
 					white-space: nowrap;
+					font-size: clamp(2.8rem , 11.786vw + .9rem , 6.7rem);
 				}
 			}
 			.tagline{

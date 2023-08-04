@@ -5,7 +5,7 @@ function bigNav() {
   return (
     <nav>
       <div className="logo">
-        <h1>CTF</h1>
+        <h1 className="monumentFontStyle ">N</h1>
       </div>
       <div className="btns flex justify-between">
         <div className="menu">
