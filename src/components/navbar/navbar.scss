@@ -17,11 +17,14 @@ nav {
   background-color: rgba(85, 85, 85, 0.246);
   border-radius: 1rem;
   border: 1px solid #ffffff2f;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.2), 0 20px 25px rgba(0, 0, 0, 0.5);
+  // box-shadow: 2px 2px rgba(0, 0, 0, 0.2), 0 20px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px rgba(22, 22, 22, 0.2), 0 20px 25px rgba(0, 0, 0, 0.2);
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bolder;
+    // background-color: #091A1A;
+    // border-radius: 50%;
   }
 
   .btns {

@@ -10,9 +10,8 @@ const ContestCountdown = () => {
     const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
     const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-    return { days, hours, minutes, seconds };
+    return { days, hours, minutes };
   };
 
   const [remainingTime, setRemainingTime] = useState(calculateRemainingTime());
@@ -20,31 +19,29 @@ const ContestCountdown = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setRemainingTime(calculateRemainingTime());
-    }, 1000);
+    }, 60000);
 
     return () => clearInterval(timer);
   }, []);
+  console.log("Hi re-render")
 
   return (
     <div className="countdown">
-      <h2>Contest Countdown</h2>
+      <h2 className="timerTitle monumentFontStyle">Contest Starts In</h2>
       <div className="timer">
         <div className="time-box">
-          <span className="time">{remainingTime.days}</span>
+          <span className="time">{remainingTime.days} :</span>
           <span className="unit">Days</span>
         </div>
         <div className="time-box">
-          <span className="time">{remainingTime.hours}</span>
+          <span className="time"> {remainingTime.hours} :</span>
           <span className="unit">Hours</span>
         </div>
         <div className="time-box">
           <span className="time">{remainingTime.minutes}</span>
           <span className="unit">Minutes</span>
         </div>
-        <div className="time-box">
-          <span className="time">{remainingTime.seconds}</span>
-          <span className="unit">Seconds</span>
-        </div>
+
       </div>
     </div>
   );

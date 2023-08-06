@@ -29,7 +29,7 @@ const InputCard = () => {
       alert(" Give Valid Inputs :) ");
     }
   };
-
+  
   return (
     <>
       <form onSubmit={userSubmit}>

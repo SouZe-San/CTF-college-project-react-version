@@ -1,28 +1,48 @@
-// .active{ 
+// .active{
 //     display: block !important;
-//     opacity: 1 !important;
+    // opacity: 1 !important;
 // }
 
 .rulesSection {
-  width: 45%;
-  margin: 0 auto;
+  width: 47%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4rem auto;
   color: white;
-  font-family: "Monument Extended";
-  .ruleSectionTitle {
-    font-size: 3.4rem;
-    text-align: center;
-    color: #41c77f;
+  // font-family: "Monument Extended";
+  .header {
+    position: relative;
+    margin-bottom: 48px;
+    .bg-title-stoked {
+      opacity: 0.6;
+      width: 100%;
+      position: relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      @media (max-width : 460px) {
+        opacity: 0;
+      }
+    }
+    .ruleSectionTitle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: clamp(1.2rem , 10vw + .4rem , 2rem);
+      transform: translate(-50%, -47%);
+      white-space: nowrap;
+    }
   }
+  
   ul {
     width: 100%;
-    max-width: 768px;
-    margin: 1.2rem 0;
+    max-width: 788px;
+    margin: 1.5rem 0;
     li {
       border-bottom: solid thin rgba(white, 0.2);
       .faq {
         display: flex;
-        padding: 15px;
-
+        padding: 12px 15px;
+        font-family: "Monument Extended";
         justify-content: space-between;
         align-items: center;
         svg {
@@ -31,20 +51,28 @@
           height: 1.5rem;
         }
       }
-      p{
-        padding: 15px;
+      p {
+        padding: 2px 15px 16px;
         // display: none;
         // opacity: 0;
         transition: all 0.3 ease-in-out;
-        line-height: normal!important;
-        letter-spacing:.02em ;
+        line-height: normal;
+        letter-spacing: 0.02em;
         word-wrap: break-word;
-        hyphens:auto;
-        overflow-wrap:break-word;
-        -ms-hyphens:auto;
-        -moz-hyphens:auto;
-        -webkit-hyphens:auto;
-            }
+        hyphens: auto;
+        overflow-wrap: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        color: rgb(255, 255, 255 , 0.8);
+        span{
+          opacity : 0, ;
+          pointer-events: "none";
+          @media (max-width : 460px) {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

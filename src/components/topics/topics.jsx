@@ -148,32 +148,6 @@ function Topics() {
           );
         })}
       </div>
-      {/* <motion.div
-        ref={modalContainer}
-        variants={scaleAnimation}
-        animate={isHovered ? "enter" : "closed"}
-        className="imageContainer"
-      >
-        <div
-          className="someThing"
-          style={{ left: isHovered.idx * -250 + "px" }}
-        >
-          {topicAssets.map((topicAsset, index) => {
-            return (
-              <div key={index} className={"imageWrapper " + isHovered.idx}>
-                <Image
-                  src={topicAsset.image}
-                  // layout="fill"
-                  // style={{ width: "130%" }}
-                  // sizes="120%"
-                  // width={200}
-                  alt="this is the best"
-                />
-              </div>
-            );
-          })}
-        </div>
-      </motion.div> */}
     </div>
   );
 }

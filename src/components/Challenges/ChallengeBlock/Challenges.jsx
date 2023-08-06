@@ -58,15 +58,15 @@ const Challenges = ({ challenges_array }) => {
 
   return (
     <div className="px-16 mb-8">
-      <div className="page_header px-12">
+      <div className="page_header">
         <h1>Capture The Flag</h1>
-        <h4>
+        <h3>
           There some small flag Lets conquer those within the time. Read Instruction Carefully and
           flow them.
-        </h4>
+        </h3>
       </div>
 
-      <div className="sorting w-full text-right  md:mt-8">
+      <div className="sorting md:mt-8">
         <button
           className={activeButton === 0 ? "active_sort sort_btn" : "sort_btn"}
           onClick={sortByDefault}

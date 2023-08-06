@@ -5,7 +5,7 @@ import InputCard from "./InputCard";
 import DetailsCard from "./DetailsCard";
 const MainBlock = () => {
   return (
-    <div className="flex justify-center items-center" style={{ minHeight: "calc(100vh - 4rem)" }}>
+    <div className="flex justify-center items-center" style={{ minHeight: "calc(100vh)" }}>
       <div className="card_case flex">
         <div className="page_details flex-none relative">
           <DetailsCard />
@@ -19,3 +19,4 @@ const MainBlock = () => {
 };
 
 export default MainBlock;
+
