@@ -82,8 +82,8 @@
                   hsl(154deg 64% 24%) 21%,
                   hsl(147deg 20% 23%) 38%,
                   hsl(344deg 0% 17%) 47%,
-                  hsl(360deg 1% 10%) 60%,
-                  hsl(0, 1%, 32%) 85%
+                  hsla(0, 2%, 10%, 0.406) 60%,
+                  hsla(0, 1%, 32%, 0) 85%
                 );
                 color: transparent;
                 -webkit-background-clip: text;
@@ -95,7 +95,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0%);
               }
             }
           }
@@ -129,8 +129,8 @@
                   hsl(17deg 84% 33%) 18%,
                   hsl(7deg 77% 26%) 27%,
                   hsl(360deg 76% 19%) 36%,
-                  hsl(0, 40%, 12%) 49%,
-                  hsl(0, 0%, 29%) 89%
+                  hsla(0, 39%, 15%, 0.655) 49%,
+                  hsla(0, 0%, 29%, 0.043) 79%
                 );
                 color: transparent;
                 -webkit-background-clip: text;
@@ -142,7 +142,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0%);
               }
             }
           }

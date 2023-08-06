@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-
 import React, { useState, useRef, useEffect } from "react";
 import {gsap} from "gsap"
 // Components
 import Dropdown from "../Dropdown/Dropdown";
 
-// StyleSheet
 import "./challenges.scss";
 
 const ChallengeItem = ({ length, index, challenge }) => {
-  //  Variables
+
   const [isDropdown, setIsDropdown] = useState(false);
   const [styleLevel, setStyleLevel] = useState({});
   const dropdownRef = useRef(null);
@@ -45,14 +43,20 @@ const ChallengeItem = ({ length, index, challenge }) => {
     if (challenge.difficulty == "easy") {
       setStyleLevel({
         color: "#5be296",
+        background: "#476e4778",
+        borderRadius: "999px"
       });
     } else if (challenge.difficulty == "hard") {
       setStyleLevel({
         color: "#fb0248",
+        background: "#b6000078",
+        borderRadius: "999px"
       });
     } else {
       setStyleLevel({
         color: "#ffaa4f",
+        background: "#d56c1078",
+        borderRadius: "999px"
       });
     }
   }, [challenge.difficulty]);

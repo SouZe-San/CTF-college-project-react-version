@@ -43,11 +43,15 @@ function Rules() {
       question: "Final verdict",
       answer: "Regarding any disputes, the decision by admins will be final and have to be accepted by the contestents.",
     },
+    {
+      id: 8,
+      question : "Inconvinience in infustructure"
+    }
   ];
 
   // const rules = [
   //   "Treat everyone with respect in discussion groups. We do not tolerate any kind of harassment.",
-  //   "You are not allowed to brute-force any challenge on a server, unless specified otherwise.",
+  //   "You are not allowed to brute-force any challenge on a server, unless specified otherwise.",  done
   //   "Do not share your login credentials with anyone other than your teammates.",  done
   //   "Violation of any of the rules may lead to disqualification.", done
   //   "Regarding all disputes, the decision by admins is final.", done

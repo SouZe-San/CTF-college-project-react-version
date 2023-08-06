@@ -43,6 +43,7 @@ const RankingBlock = ({ rankersList, userDetails }) => {
       );
     });
   }, []);
+  
 
   return (
     <>

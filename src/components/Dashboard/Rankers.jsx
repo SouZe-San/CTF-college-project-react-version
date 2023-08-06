@@ -18,3 +18,4 @@ const Rankers = ({ user }) => {
 };
 
 export default Rankers;
+
