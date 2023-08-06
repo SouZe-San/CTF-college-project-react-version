@@ -2,6 +2,7 @@
   width: 100%;
   color: white;
   font-size: 50px;
+  margin: 4rem auto;
   .header {
     position: relative;
     margin-bottom: 48px;
@@ -22,6 +23,7 @@
   }
   .topicContainer {
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;

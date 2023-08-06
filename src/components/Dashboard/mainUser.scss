@@ -1,199 +1,226 @@
 div.mainUser_div {
-    align-items: center;
-    margin-top: 1.5rem;
-    scale: 1;
+  align-items: center;
+  margin-top: 1.5rem;
+  scale: 1;
+  font-family: "Monument Extended";
+  .hunger {
+    width: 12rem;
+    border-bottom: 21px solid black;
+    border-right: 28px solid #0000;
+    border-left: 26px solid transparent;
+  }
 
-    .hunger {
-        width: 12rem;
-        border-bottom: 21px solid black;
-        border-right: 28px solid #0000;
-        border-left: 26px solid transparent;
+  .card_upper_part {
+    width: 20rem;
+    border: 6px solid #071012;
+    // height: auto;
+    aspect-ratio: 0.9;
+    border-radius: 6%;
+    transition: box-shadow 0.2s ease-in-out;
+    background: #ffffff12;
+    // box-shadow: inset 0 0 16px 4px #797979c9;
+    // box-shadow: inset 0 0 16px 4px #797979c9, 0px 9px 14px -8px #95959594;
+
+    &:hover {
+      // box-shadow: inset 0 0 16px 4px rgba(121, 121, 121, 0.7882352941), 0px 9px 18px -6px rgba(149, 149, 149, 0.77);
+      // ;
+
+      .card_inner_part {
+        .user_details {
+          .score {
+            svg {
+              transform: rotateY(360deg);
+              scale: 1.3;
+            }
+          }
+
+          h2 {
+            // text-shadow: 0px 1px 5px #5fff9e;
+            scale: 1.01;
+          }
+
+          .box {
+            color: #7bffc8;
+          }
+        }
+      }
     }
 
-    .card_upper_part {
-        width: 20rem;
-        border: 6px solid #071012;
-        height: 23rem;
-        border-radius: 6%;
-        transition: box-shadow 0.2s ease-in-out;
-        background: #ffffff12;
-        // box-shadow: inset 0 0 16px 4px #797979c9;
-        box-shadow: inset 0 0 16px 4px #797979c9, 0px 9px 14px -8px #95959594;
+    .card_inner_part {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px) saturate(2) brightness(110%);
+      border-radius: 16px;
+      overflow: hidden;
+      background: linear-gradient(rgba(0, 0, 0, 0.139), rgba(0, 0, 0, 0.879));
+      //   mix-blend-mode: screen;
+      // mix-blend-mode: normal;
+      filter: invert(0);
+      border: 1px solid rgba(255, 255, 255, 0.166);
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url(/src/assets/gallery-images/grid-lines-02.svg);
+        opacity: 0.4;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        box-shadow: 9px 7px 9px 4px rgb(255 255 255 / 41%);
+      }
+      .bg {
+        background: hsl(173, 100%, 72%);
+        // background: linear-gradient(
+        //   43deg,
+        //   hsla(173, 100%, 72%, 0.556) 2%,
+        //   hsla(168, 100%, 58%, 0.739) 23%,
+        //   rgba(40, 255, 208, 0.778) 46%,
+        //   hsla(144, 100%, 58%, 0.731) 61%,
+        //   rgba(146, 255, 21, 0.797) 78%,
+        //   rgba(244, 255, 30, 0.435) 100%
+        // );
+        background-color: radial-gradient(
+            at 27% 37%,
+            #3a8bfd 0,
+            transparent 50%
+          ),
+          radial-gradient(at 97% 21%, rgba(151, 113, 254, 0.99) 0, transparent 50%),
+          radial-gradient(at 52% 99%, rgba(253, 58, 77, 0.99) 0, transparent 50%),
+          radial-gradient(at 10% 29%, rgba(90, 252, 125, 0.99) 0, transparent 50%),
+          radial-gradient(at 97% 96%, rgba(228, 199, 149, 0.99) 0, transparent 50%),
+          radial-gradient(at 33% 50%, rgba(140, 168, 232, 0.99) 0, transparent 50%),
+          radial-gradient(at 79% 53%, rgba(238, 165, 186, 0.99) 0, transparent 50%);
+        animation: anime 8s infinite;
+        // filter: blur(32px) brightness(90%);
+        h1 {
+        //   font-family: "Redressed", "Poppins", sans-serif;
+        //   font-family: "Monument Extended";
+          font-size: 3rem;
+          //   background-color: red;
+          // font-style: italic;
+          color: #ffffffb2;
+          width: 100%;
+          height: 100%;
 
-        &:hover {
-            // box-shadow: inset 0 0 16px 4px rgba(121, 121, 121, 0.7882352941), 0px 9px 18px -6px rgba(149, 149, 149, 0.77);
-            // ;
+          text-align: right;
+          top: -10%;
+          // padding: 0 1rem;
+        }
+      }
 
-            .card_inner_part {
-                .user_details {
-                    .score {
-                        box-shadow: -2px 4px 8px 0px rgba(8, 35, 37, 0.9), inset 0 0 5px 3px rgba(12, 45, 64, 0.7215686275);
-                        // scale: 1.05;
-                        // transform: skew(2deg, 0deg);
-                        // transform: translate3d(0.1rem, -0.1rem, 2rem);
-                        border-color: rgba(12, 57, 64, 0.72);
+      .hexagon {
+        translate: 1rem -4.8rem;
+        position: absolute;
 
-                        svg {
-                            transform: rotateY(360deg);
-                            scale: 1.3;
-                        }
-                    }
-
-                    h2 {
-                        text-shadow: 0px 1px 5px #5fff9e;
-                        scale: 1.01;
-                    }
-
-                    .box {
-                        color: #7bffc8;
-                    }
-
-                }
-
-            }
-
+        h1 {
+          position: absolute;
+          font-family: "SeldomScene", "Poppins", sans-serif;
+          top: 2.69rem;
+          left: 2.532rem;
+          z-index: 1;
+          font-size: 2.4rem;
+          padding: 5px 10px;
         }
 
+        svg {
+          width: 9rem;
+          height: auto;
+          transform: rotate(90deg);
+          // translate: 1rem -4.3rem;
+          // position: absolute;
 
-        .card_inner_part {
-            width: 100%;
-            height: 100%;
-            backdrop-filter: blur(2px);
-            border-radius: 16px;
-
-            .bg {
-                border-top-right-radius: 16px;
-                border-top-left-radius: 16px;
-                background: hsl(173, 100%, 72%);
-                background: linear-gradient(43deg, hsla(173, 100%, 72%, 0.556) 2%, hsla(168, 100%, 58%, 0.739) 23%, rgba(40, 255, 208, 0.778) 46%, hsla(144, 100%, 58%, 0.731) 61%, rgba(146, 255, 21, 0.797) 78%, rgba(244, 255, 30, 0.435) 100%);
-
-                animation: anime 4s infinite;
-
-                h1 {
-
-                    font-family: "Redressed", "Poppins", sans-serif;
-                    font-size: 4rem;
-                    font-style: italic;
-                    color: #ffffffb2;
-                    width: 100%;
-                    text-align: right;
-                    padding: 0 1rem;
-
-                }
-
-            }
-
-            .hexagon {
-                translate: 1rem -4.8rem;
-                position: absolute;
-
-                h1 {
-                    position: absolute;
-                    font-family: "SeldomScene", "Poppins", sans-serif;
-                    top: 2.6rem;
-                    left: 2.4rem;
-                    z-index: 1;
-                    font-size: 2.4rem;
-                    padding: 5px 10px;
-
-                }
-
-                svg {
-                    width: 9rem;
-                    height: auto;
-                    transform: rotate(90deg);
-                    // translate: 1rem -4.3rem;
-                    // position: absolute;
-
-
-                    polygon {
-                        stroke: #142325;
-                        // fill: rgb(9, 38, 74);
-                        fill: rgba(11, 57, 62, 0.99);
-                        // filter: blur(1px);
-                    }
-                }
-            }
-
-
-            .user_details {
-                padding-left: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                padding-top: 2rem;
-
-
-
-                .score {
-                    display: inline-block;
-                    padding: 3px 13px;
-                    position: absolute;
-                    right: 0;
-                    translate: 0 -21px;
-                    margin-right: 10px;
-                    border-radius: 5px;
-                    background: #03b7ae;
-                    color: black;
-                    border: 1px solid black;
-                    transition: all .2s ease-in;
-                    font-weight: 500;
-
-                    svg {
-                        width: 1.2rem;
-                        margin-right: 3px;
-                        display: inline;
-                        transition: transform 0.3s ease-in-out
-                    }
-                }
-
-                h2 {
-                    padding-top: 1.5rem;
-                    font-size: 2.3rem;
-                    font-weight: 800;
-                    font-family: 'Chakra Petch', "Poppins", sans-serif;
-                    transition: all .2s ease-in;
-                    translate: 0 -50px;
-                    opacity: 0;
-                }
-
-                .box {
-                    justify-content: space-evenly;
-                    padding-right: 1.6rem;
-                    transition: all .2s ease-in;
-                    margin-top: 0.5rem;
-
-                    .vertical_line {
-
-                        rotate: 90deg;
-
-                        hr {
-                            width: 26px;
-                            border: none;
-                            border-top: 2px solid rgba(209, 206, 206, 0.57);
-                        }
-                    }
-
-                    .box_item {
-                        font-size: 1.3rem;
-                        font-weight: 700;
-
-                        p {
-                            font-size: 0.8rem;
-                            color: #737373;
-                            font-weight: 600;
-                        }
-                    }
-                }
-
-            }
+          polygon {
+            stroke: #142325;
+            // fill: rgb(9, 38, 74);
+            fill: rgba(11, 57, 62, 0.99);
+            // filter: blur(1px);
+          }
         }
+      }
+
+      .user_details {
+        padding-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        // padding-top: 2rem;
+        // border: 1px solid white;
+        margin: 2rem auto;
+        .score {
+          display: inline-block;
+          padding: 3px 13px;
+          position: absolute;
+          right: 0;
+          translate: 0 -21px;
+          margin-right: 10px;
+          border-radius: 5px;
+          background: #0f3634c8;
+          color: rgb(255, 255, 255);
+          border: 1px solid rgba(255, 255, 255, 0.507);
+          transition: all 0.2s ease-in;
+          font-family: "Monument Extended";
+
+          svg {
+            fill: white;
+            width: 1rem;
+            margin-right: 3px;
+            display: inline;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+
+        h2 {
+          margin-top: 2.5rem;
+          //   font-size: 2.3rem;
+          font-size: 1.55rem;
+        //   font-weight: 800;
+          //   font-family: "Poppins", sans-serif;
+          transition: all 0.5s ease-in;
+        //   translate: 0 50px;
+        //   opacity: 0;
+        }
+
+        .box {
+          justify-content: space-evenly;
+          padding-right: 1.6rem;
+          transition: all 0.2s ease-in;
+          margin-top: 0.5rem;
+
+          .vertical_line {
+            rotate: 90deg;
+
+            hr {
+              width: 26px;
+              border: none;
+              border-top: 2px solid rgba(209, 206, 206, 0.57);
+            }
+          }
+
+          .box_item {
+            font-size: 1.3rem;
+            font-weight: 700;
+
+            p {
+              font-size: 0.8rem;
+              color: #737373;
+              font-weight: 600;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
-
 @keyframes anime {
-    100% {
-        filter: hue-rotate(360deg);
-    }
+  0% {
+    filter: hue-rotate(0deg) blur(32px) brightness(100%);
+  }
+  50% {
+    filter: hue-rotate(360deg) blur(48px) brightness(90%);
+  }
+  100% {
+    filter: hue-rotate(0deg) blur(32px) brightness(100%);
+  }
 }

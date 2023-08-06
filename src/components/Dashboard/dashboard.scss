@@ -6,8 +6,13 @@
     font-family: "Chakra Petch", sans-serif;
     rotate: -10deg;
     text-align: center;
-    color: #0c58624f;
-    translate: 0 -6rem;
+    // color: #779f994f;
+    color: transparent;
+    background: linear-gradient(#779f9984 , rgba(0, 0, 0, 0) 86%);
+    background-clip: text;
+    translate: 1 -6rem;
+    filter: blur(1px);
+    opacity: .4;
 }
 
 

@@ -26,18 +26,21 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* background-color: rgb(209, 178, 64); */
 }
 
-.monumentFontStyle{
+.monumentFontStyle {
   font-family: "Monument Extended";
 }
 body {
   scroll-behavior: smooth;
   /* background-color: #031315;
    background-color: #000000; */
-  background-color: #030f11;
+  /* background-color: #030f11; */
+  background: linear-gradient(331deg, #081a1a 50%, #313e3e);
   color: white;
   height: auto;
+  font-family: "Poppins";
 }
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -51,3 +54,7 @@ body {
     background-color: #f9f9f9;
   }
 } */
+
+/* 
+background-color : radial-gradient(at 27% 37%,#3a8bfd 0,transparent 50%),radial-gradient(at 97% 21%,#9772fe 0,transparent 50%),radial-gradient(at 52% 99%,#fd3a4e 0,transparent 50%),radial-gradient(at 10% 29%,#5afc7d 0,transparent 50%),radial-gradient(at 97% 96%,#e4c795 0,transparent 50%),radial-gradient(at 33% 50%,#8ca8e8 0,transparent 50%),radial-gradient(at 79% 53%,#eea5ba 0,transparent 50%);
+*/
