@@ -46,3 +46,8 @@
   font-family: "SeldomScene";
   src: url("./assets/font/SeldomScene/SeldomScene-B6lG.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("./assets/font/MonumentExtended/MonumentExtendedRegular.woff") format("woff");
+}
