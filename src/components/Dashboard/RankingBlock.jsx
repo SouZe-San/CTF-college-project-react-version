@@ -31,7 +31,7 @@ const RankingBlock = ({ rankersList, userDetails }) => {
         {
           scrollTrigger: {
             trigger: element,
-            start: "top 85%",
+            start: "top 80%",
             end: "bottom 75%",
             // markers: true,
             scrub: true,
@@ -43,7 +43,6 @@ const RankingBlock = ({ rankersList, userDetails }) => {
       );
     });
   }, []);
-  
 
   return (
     <>
@@ -62,8 +61,8 @@ const RankingBlock = ({ rankersList, userDetails }) => {
               return (
                 <div key={user.rank} className="w-full" ref={(el) => (rankRow.current[index] = el)}>
                   <Rankers user={user} />
-                  <div className="horizon"></div>
-                  <div className="horizon mt-[8px]"></div>
+                  {/* <div className="horizon"></div>
+                  <div className="horizon mt-[8px]"></div> */}
                 </div>
               );
             })}

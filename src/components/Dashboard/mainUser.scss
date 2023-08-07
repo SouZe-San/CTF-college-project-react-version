@@ -3,6 +3,7 @@ div.mainUser_div {
   margin-top: 1.5rem;
   scale: 1;
   font-family: "Monument Extended";
+
   .hunger {
     width: 12rem;
     border-bottom: 21px solid black;
@@ -58,6 +59,7 @@ div.mainUser_div {
       // mix-blend-mode: normal;
       filter: invert(0);
       border: 1px solid rgba(255, 255, 255, 0.166);
+
       &::after {
         content: "";
         position: absolute;
@@ -69,6 +71,7 @@ div.mainUser_div {
         top: 0;
         box-shadow: 9px 7px 9px 4px rgb(255 255 255 / 41%);
       }
+
       .bg {
         background: hsl(173, 100%, 72%);
         // background: linear-gradient(
@@ -80,11 +83,9 @@ div.mainUser_div {
         //   rgba(146, 255, 21, 0.797) 78%,
         //   rgba(244, 255, 30, 0.435) 100%
         // );
-        background-color: radial-gradient(
-            at 27% 37%,
+        background-color: radial-gradient(at 27% 37%,
             #3a8bfd 0,
-            transparent 50%
-          ),
+            transparent 50%),
           radial-gradient(at 97% 21%, rgba(151, 113, 254, 0.99) 0, transparent 50%),
           radial-gradient(at 52% 99%, rgba(253, 58, 77, 0.99) 0, transparent 50%),
           radial-gradient(at 10% 29%, rgba(90, 252, 125, 0.99) 0, transparent 50%),
@@ -92,10 +93,11 @@ div.mainUser_div {
           radial-gradient(at 33% 50%, rgba(140, 168, 232, 0.99) 0, transparent 50%),
           radial-gradient(at 79% 53%, rgba(238, 165, 186, 0.99) 0, transparent 50%);
         animation: anime 8s infinite;
+
         // filter: blur(32px) brightness(90%);
         h1 {
-        //   font-family: "Redressed", "Poppins", sans-serif;
-        //   font-family: "Monument Extended";
+          //   font-family: "Redressed", "Poppins", sans-serif;
+          //   font-family: "Monument Extended";
           font-size: 3rem;
           //   background-color: red;
           // font-style: italic;
@@ -106,6 +108,25 @@ div.mainUser_div {
           text-align: right;
           top: -10%;
           // padding: 0 1rem;
+        }
+      }
+
+      h1.card_user-rank {
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        position: absolute;
+        top: 0;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 3.6rem;
+        font-style: italic;
+        font-family: "Redressed", "Poppins", sans-serif;
+
+        sup {
+          margin-left: 5px;
+          font-size: 60%;
+          top: -0.7em;
         }
       }
 
@@ -147,6 +168,7 @@ div.mainUser_div {
         // padding-top: 2rem;
         // border: 1px solid white;
         margin: 2rem auto;
+
         .score {
           display: inline-block;
           padding: 3px 13px;
@@ -174,11 +196,11 @@ div.mainUser_div {
           margin-top: 2.5rem;
           //   font-size: 2.3rem;
           font-size: 1.55rem;
-        //   font-weight: 800;
+          //   font-weight: 800;
           //   font-family: "Poppins", sans-serif;
           transition: all 0.5s ease-in;
-        //   translate: 0 50px;
-        //   opacity: 0;
+          //   translate: 0 50px;
+          //   opacity: 0;
         }
 
         .box {
@@ -217,9 +239,11 @@ div.mainUser_div {
   0% {
     filter: hue-rotate(0deg) blur(32px) brightness(100%);
   }
+
   50% {
     filter: hue-rotate(360deg) blur(48px) brightness(90%);
   }
+
   100% {
     filter: hue-rotate(0deg) blur(32px) brightness(100%);
   }

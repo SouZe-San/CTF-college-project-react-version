@@ -10,7 +10,6 @@ const MainUser = ({ loggedTeamInfo, userDetails }) => {
   const mainUserRef = useRef();
   const teamNameRef = useRef();
 
-
   const ordinalNumber = () => {
     if (loggedTeamInfo.rank === 1) {
       setDisplayRank("st");
@@ -32,36 +31,36 @@ const MainUser = ({ loggedTeamInfo, userDetails }) => {
       {
         // scale: 0,
         // autoAlpha: 0,
-        y : 100,
-        opacity : 0,
+        y: 100,
+        opacity: 0,
       },
       {
         // autoAlpha: 1,
         // scale: 1,
-        y : 0,
-        opacity : 1,
-        duration: .5,
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
       }
-    )
-      // .to(teamNameRef.current, {
-      //   opacity: 1,
-      //   y: 0,
-      // })
-      // .fromTo(
-      //   ".box_item",
-      //   {
-      //     y: 50,
-      //     opacity: 0,
-      //   },
-      //   {
-      //     y: 0,
-      //     opacity: 1,
-      //     // stagger: {
-      //       // each: 0.2,
-      //       // from: "center",
-      //     // },
-      //   }
-      // );
+    );
+    // .to(teamNameRef.current, {
+    //   opacity: 1,
+    //   y: 0,
+    // })
+    // .fromTo(
+    //   ".box_item",
+    //   {
+    //     y: 50,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     // stagger: {
+    //       // each: 0.2,
+    //       // from: "center",
+    //     // },
+    //   }
+    // );
     tl.play();
   }, []);
 
@@ -76,14 +75,13 @@ const MainUser = ({ loggedTeamInfo, userDetails }) => {
       <div className="hunger"></div>
       <div className="card_upper_part">
         <div className="card_inner_part">
-          <div className="bg w-full bg-gradient-to-r from-green-500 to-blue-500  h-[27%]">
-            <h1>
-              {loggedTeamInfo.rank}<sup>{displayRank}</sup>
-            </h1>
-          </div>
+          <div className="bg w-full bg-gradient-to-r from-green-500 to-blue-500  h-[27%]"></div>
+          <h1 className="card_user-rank">
+            {loggedTeamInfo.rank}
+            <sup>{displayRank}</sup>
+          </h1>
           <div className="hexagon">
-            {/* <h1>{userDetails.teamName[0].toUpperCase()}</h1> */}
-            <h1>{loggedTeamInfo.rank}</h1>
+            <h1>{userDetails.teamName[0].toUpperCase()}</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="170"
