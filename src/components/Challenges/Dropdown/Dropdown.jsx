@@ -94,7 +94,8 @@ const Dropdown = ({ dropdownRef, challenge }) => {
     console.log("attachFileDownload", fileUrl);
     e.preventDefault();
     // TODO: This come from data
-    fileUrl = "https://images.pexels.com/photos/372748/pexels-photo-372748.jpeg";
+    fileUrl =
+      "https://images.pexels.com/photos/372748/pexels-photo-372748.jpeg";
     try {
       const response = await fetch(fileUrl);
       const blob = await response.blob();
@@ -113,23 +114,29 @@ const Dropdown = ({ dropdownRef, challenge }) => {
   };
 
   return (
-    <div className="details flex flex-col py-4 px-12 lg:px-20" ref={dropdownRef}>
+    <div
+      className="details flex flex-col py-4 px-12 lg:px-20"
+      ref={dropdownRef}
+    >
       <div className="about py-2 flex flex-wrap justify-between">
         {/* Point Space of That Flag */}
         <div className="">
-          <h4 className="italic">
+          <h4 className="">
             <span className="DropDown_headline">Point :</span> {point}
           </h4>
         </div>
         {/* Spawn Button for that Flag */}
-        <div className="btn flex items-center justify-between w-[9.4rem]">
+        <div className="btn flex items-center justify-between">
           {challenge.spawnable && (
             <>
               <button className="spawnBtn flex" onClick={spawnStart}>
                 {isStart ? (
                   <>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M6 5H8V19H6V5ZM16 5H18V19H16V5Z" fill="rgba(255,255,255,1)"></path>
+                      <path
+                        d="M6 5H8V19H6V5ZM16 5H18V19H16V5Z"
+                        fill="rgba(255,255,255,1)"
+                      ></path>
                     </svg>{" "}
                     Stop
                   </>
@@ -145,7 +152,9 @@ const Dropdown = ({ dropdownRef, challenge }) => {
                   </>
                 )}
               </button>
-              <div className="timer_section">{isStart ? <Timer /> : "00:00"}</div>
+              <div className="timer_section">
+                {isStart ? <Timer /> : "00:00"}
+              </div>
             </>
           )}
         </div>
@@ -172,7 +181,9 @@ const Dropdown = ({ dropdownRef, challenge }) => {
                 fill="rgba(200,200,200,0.86)"
               ></path>
             </svg>
-            {isStart && <div className="connection_string select-all">{connString}</div>}
+            {isStart && (
+              <div className="connection_string select-all">{connString}</div>
+            )}
           </div>
         ) : (
           <button
@@ -188,12 +199,12 @@ const Dropdown = ({ dropdownRef, challenge }) => {
       </div>
       {/* Text area for writing Flag */}
       <div className="textarea">
-        <h2 className="DropDown_headline"> Tell Us Your Flag</h2>
+        <h1 className="DropDown_headline "> Tell Us Your Flag</h1>
         <form className="" action="post">
-          <div className="flex md:flex-row  flex-col items-end">
+          <div className=" submitSectionContainer flex md:flex-row  flex-col">
             <label htmlFor="ans" className=" w-4/5 lg:w-3/5">
               <textarea
-                name="ans"
+                className="ans"
                 id="ans-body"
                 placeholder="Enter Flag..."
                 value={flag}

@@ -19,7 +19,7 @@ const home = () => {
       <Topics/>
       <Rules/>
       <Footer/>
-      <Branding/>
+      {/* <Branding/> */}
     </div>
   );
 };
