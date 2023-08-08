@@ -29,10 +29,11 @@ html {
   /* background-color: rgb(209, 178, 64); */
 }
 
-.monumentFontStyle {
+.monumentFontStyle{
   font-family: "Monument Extended";
 }
 body {
+  box-sizing: border-box;
   scroll-behavior: smooth;
   /* background-color: #031315;
    background-color: #000000; */
