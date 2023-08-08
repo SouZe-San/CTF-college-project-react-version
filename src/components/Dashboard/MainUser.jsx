@@ -95,7 +95,6 @@ const MainUser = ({ loggedTeamInfo, userDetails }) => {
               />
             </svg>
           </div>
-
           <div className="user_details mb-4">
             <div className="score">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
