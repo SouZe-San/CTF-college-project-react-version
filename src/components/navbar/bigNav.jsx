@@ -14,13 +14,13 @@ function bigNav() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/#RewardsSection">Rewards</Link>
+              <a href="/#RewardsSection">Rewards</a>
             </li>
             <li>
-              <Link to="/#TopicsSection">Topics</Link>
+              <a href="/#TopicsSection">Topics</a>
             </li>
             <li>
-              <Link to="/#RulesSection">Rules</Link>
+              <a href="/#RulesSection">Rules</a>
             </li>
             <li>
               <Link to="/dashboard">Profile</Link>
