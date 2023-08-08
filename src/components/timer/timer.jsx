@@ -36,15 +36,14 @@ const ContestCountdown = () => {
         <div className="time-box">
           <span className="time">
             {remainingTime.days}
-            <span>d</span>:
+            <span>d </span>: 
           </span>
         </div>
         <div className="time-box">
           <span className="time">
             {" "}
             {remainingTime.hours}
-            <span>h</span>:
-          </span>
+            <span>h </span>: </span>
         </div>
         <div className="time-box">
           <span className="time">

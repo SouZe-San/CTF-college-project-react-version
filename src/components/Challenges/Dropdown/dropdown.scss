@@ -1,186 +1,174 @@
 .details {
-    height: 0;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.1s ease-in;
-    opacity: 0;
-    display: none;
+  height: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  display: none;
 
-    .DropDown_headline {
-        font-family: 'Open Sans', sans-serif;
+  .DropDown_headline {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .about {
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 200;
+      span {
+        font-size: inherit;
+      }
     }
 
-    .about {
-
-        h4 {
-            font-size: 1.1rem;
-            font-weight: 200;
-
-            span {
-                font-weight: 700;
-                font-style: normal;
-                font-size: 1.3rem;
-            }
+    .btn {
+      gap: 1.2rem;
+      .spawnBtn {
+        width: 100px;
+        padding: 5px 1rem;
+        border: 1.4px solid #f79308b6;
+        // background-color: aqua;
+        border-radius: 6px;
+        &:hover {
         }
 
-        .btn {
-            .spawnBtn {
-                padding: 5px 1rem;
-                border: 1.4px solid #78F251;
-                border-radius: 20px;
-                font-weight: 600;
-
-                &:hover {
-                    // box-shadow: 0 0 7px 1px greenyellow;
-                    box-shadow: 0px 3px 11px -3px greenyellow;
-                }
-
-                svg {
-                    width: 1.3rem;
-                }
-            }
-
-            .timer_section {
-                font-family: 'Roboto Mono', monospace;
-                font-weight: 500;
-            }
+        svg {
+          width: 1.3rem;
         }
+      }
+
+      .timer_section {
+        width: 100px;
+        font-family: "Monument Extended";
+      }
+    }
+  }
+
+  .instruction {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
     }
 
+    .attachBtn {
+      padding: 8px 3rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      background: #65e065aa;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+      box-shadow: inset 0px -2px 5px 3px #000000c4;
+      transition: all 0.2s ease-in;
+      color: black;
+      // border: 1px solid #4f4f4f;
 
-    .instruction {
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            padding-bottom: 1rem;
+      span {
+        transition: transform 0.2s ease-in;
+      }
+
+      svg {
+        width: 1.4rem;
+        margin-right: 5px;
+        fill: black;
+      }
+
+      &:hover {
+        span {
+          transform: scale(0.9);
         }
+      }
+    }
 
-        .attachBtn {
-            padding: 8px 3rem;
-            font-size: 1rem;
-            border-radius: 10px;
-            font-weight: 600;
-            background: rgba(93, 244, 61, 0.97);
-            justify-content: center;
-            align-items: center;
-            margin: 1rem 0;
-            box-shadow: inset 0px -2px 5px 3px #000000c4;
-            transition: all 0.2s ease-in;
+    .spawn {
+      padding: 8px 0.7rem;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 1rem 0;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      background: #111c1e;
+      box-shadow: inset 0px 0px 5px 3px rgba(78, 78, 78, 0.63);
+      transition: all 0.2s ease-in;
+      height: 2.5rem;
+
+      &:hover {
+        .connection_string {
+          scale: 1.03;
+        }
+      }
+
+      svg {
+        width: 2.4rem;
+
+        display: inline;
+        background: #e1e1e158;
+        padding: 2px 0.5rem;
+        border-radius: 5px;
+      }
+
+      .connection_string {
+        margin-left: 5px;
+        padding: 1px 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        min-width: 11rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .textarea {
+    h1 {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      font-family: "Poppins";
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    form {
+
+      .submitSectionContainer {
+        label {
+            padding: 0;
+          .ans {
+            padding: 0.5rem 1rem;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.2rem;
+            width: calc(100% - 1rem);
+            resize: none;
             color: black;
-            border: 1px solid #4f4f4f;
-
-            span {
-                transition: transform 0.2s ease-in;
-            }
-
-            svg {
-                width: 1.4rem;
-                margin-right: 5px;
-                fill: black;
-
-            }
-
-            &:hover {
-
-                span {
-                    transform: scale(0.9);
-                }
-            }
-        }
-
-        .spawn {
-            padding: 8px 0.7rem;
             border-radius: 10px;
-            font-weight: 600;
-            margin: 1rem 0;
-            display: inline-flex;
-            justify-content: flex-start;
-            align-items: center;
-            background: #111c1e;
-            box-shadow: inset 0px 0px 5px 3px rgba(78, 78, 78, 0.63);
-            transition: all 0.2s ease-in;
-            height: 2.5rem;
-
-            &:hover {
-                .connection_string {
-                    scale: 1.03;
-                }
-            }
-
-            svg {
-                width: 2.4rem;
-
-                display: inline;
-                background: #e1e1e158;
-                padding: 2px 0.5rem;
-                border-radius: 5px;
-            }
-
-            .connection_string {
-                margin-left: 5px;
-                padding: 1px 10px;
-                font-size: 1rem;
-                font-weight: 600;
-                font-family: 'Montserrat', sans-serif;
-                min-width: 11rem;
-                cursor: pointer;
-            }
+            outline: none;
+            height: calc(125% - 1rem);
+          }
         }
+
+        .submit_btn {
+          border: none;
+          padding: 6px 1rem;
+          border-radius: 10px;
+          cursor: pointer;
+          background: #65e065aa;
+          width: 8rem;
+          svg {
+            width: 1.4rem;
+            margin-right: 5px;
+            display: inline;
+          }
+
+          // &:hover {
+          //     svg {
+          //         scale: 1.01;
+          //     }
+          // }
+        }
+      }
     }
-
-    .textarea {
-        h2 {
-            font-size: 1.4rem;
-            text-transform: capitalize;
-            padding: 0.5rem 0;
-            font-weight: 600;
-        }
-
-        form {
-
-            label {
-                textarea {
-                    padding: 0.5rem 1rem;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 1.2rem;
-                    width: calc(100% - 1rem);
-                    resize: none;
-                    color: black;
-                    border-radius: 10px;
-                    outline: none;
-                    font-weight: 300;
-                    font-style: italic;
-                }
-            }
-
-            .submit_btn {
-
-                svg {
-                    width: 1.4rem;
-                    margin-right: 5px;
-                    display: inline;
-                }
-
-                margin-top: 1rem;
-                padding: 6px 1rem;
-                border: 2px solid #5fff05;
-                border-radius: 10px;
-                cursor: pointer;
-                font-weight: 500;
-                background: #0f250f;
-                box-shadow: inset 0 0 8px 0px white;
-                width: 8rem;
-
-                &:hover {
-                    font-weight: 700;
-                    box-shadow: inset 0 0 8px 0px white, 0px 2px 11px -2px #71fa00;
-
-                    svg {
-                        scale: 1.01;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
