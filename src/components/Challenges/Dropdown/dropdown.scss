@@ -16,6 +16,7 @@
     h4 {
       font-size: 1.1rem;
       font-weight: 200;
+
       span {
         font-size: inherit;
       }
@@ -23,14 +24,15 @@
 
     .btn {
       gap: 1.2rem;
+
       .spawnBtn {
         width: 100px;
         padding: 5px 1rem;
         border: 1.4px solid #f79308b6;
         // background-color: aqua;
         border-radius: 6px;
-        &:hover {
-        }
+
+        &:hover {}
 
         svg {
           width: 1.3rem;
@@ -60,9 +62,9 @@
       justify-content: center;
       align-items: center;
       margin: 1rem 0;
-      box-shadow: inset 0px -2px 5px 3px #000000c4;
+      // box-shadow: inset 0px -2px 5px 3px #000000c4;
       transition: all 0.2s ease-in;
-      color: black;
+      // color: black;
       // border: 1px solid #4f4f4f;
 
       span {
@@ -72,7 +74,7 @@
       svg {
         width: 1.4rem;
         margin-right: 5px;
-        fill: black;
+        fill: white;
       }
 
       &:hover {
@@ -135,7 +137,8 @@
 
       .submitSectionContainer {
         label {
-            padding: 0;
+          padding: 0;
+
           .ans {
             padding: 0.5rem 1rem;
             font-family: "Roboto", sans-serif;
@@ -145,7 +148,7 @@
             color: black;
             border-radius: 10px;
             outline: none;
-            height: calc(125% - 1rem);
+            // height: calc(125% - 1rem);
           }
         }
 
@@ -156,6 +159,7 @@
           cursor: pointer;
           background: #65e065aa;
           width: 8rem;
+
           svg {
             width: 1.4rem;
             margin-right: 5px;
