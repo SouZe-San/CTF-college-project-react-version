@@ -23,16 +23,14 @@
         .time-box{
             // border: 1px solid green;
             span{
-                display: block;
+                // display: block;
+                span{
+                    font-size: 1.5rem;
+                }
             }
             .time{
                 font-family: "Monument Extended";
                 font-size: clamp(2.6rem, 6vw + 1.1rem , 5rem);
-            }
-            .unit{
-                // font-size: 2rem;
-                font-size: clamp(1.6rem, 6vw + .7rem , 3rem);
-                font-family: "Poppins";
             }
         }
         .divider{
