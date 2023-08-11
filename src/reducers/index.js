@@ -1,14 +1,15 @@
 import { combineReducers } from "redux";
 
 // Import all Reducers
-import authReducer from "./auth";
+
 import challengesReducer from "./challenges";
-import dashboardReducer from "./dashbord";
+import dashboardReducer from "./dashboard";
 import userReducer from "./user";
+import spawnReducer from "./spawn";
 
 export default combineReducers({
-  authReducer,
   challengesReducer,
   dashboardReducer,
   userReducer,
+  spawnReducer,
 });
