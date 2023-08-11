@@ -1,52 +1,46 @@
 import "./rewardsstyle.scss";
 
-import rewardsBTS from  "../../assets/title-stoked-bg/rewardsTitleBgStoked.svg"
+import rewardsBTS from "../../assets/title-stoked-bg/rewardsTitleBgStoked.svg";
+// import gridLines from "../../assets/gallery-images/grid-lines-02.svg"
+import winnerSvg001 from "../../assets/gallery-images/Winners_Flatline.svg";
+// import winnerSvg002 from "../../assets/gallery-images/Winners_Monochromatic.svg";
+// import winnerSvg003 from "../../assets/gallery-images/Winners_Two Color.svg";
+
+const RewardCard = () => {
+  return (
+    <div className="outerCard">
+      <div className="innerCard">
+        <div className="header">
+          <img
+            className="bg-title-stoked"
+            src={rewardsBTS}
+            alt="competion title svg"
+          />
+          <h1 className="monumentFontStyle rewardsTitle ">REWARDS</h1>
+        </div>
+        <div className="container">
+          <div className="content">
+            <ul>
+              <li>Certification for the winners</li>
+              <li>Interesting prize pool</li>
+              <li>Aknowledgement from the respecteds</li>
+            </ul>
+          </div>
+          <div className="imageSection">
+            <img src={winnerSvg001} alt="" />
+          </div>
+        </div>
+        {/* <img src={winnerSvg002} alt="" /> */}
+        {/* <img src={winnerSvg003} alt="" /> */}
+      </div>
+    </div>
+  );
+};
 
 export default function Rewards() {
   return (
     <div className="rewardsSection" id="RewardsSection">
-      <div className="header">
-        <img
-          className="bg-title-stoked"
-          src={rewardsBTS}
-          alt="competion title svg"
-        />
-        <h1 className="reawadsTitle sectionTitle">REWARDS</h1>
-      </div>
-      <div className="rewardCardsContainer">
-          <div className="cards">
-            <div className="card">
-              <div className="outerBorder">
-                <div className="innerBorder">
-                  <div className="topInfo">
-                    <h1 className="numValue">02</h1>
-                    <h1 className="stringValue">SECOND</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="cardMain card">
-            <div className="outerBorder">
-                <div className="innerBorder">
-                  <div className="topInfoMain">
-                    <h1 className="numValueMain">01</h1>
-                    <h1 className="stringValue">FIRST</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-            <div className="outerBorder">
-                <div className="innerBorder">
-                  <div className="topInfo">
-                    <h1 className="numValue">03</h1>
-                    <h1 className="stringValue">THIRD</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+      <RewardCard />
     </div>
   );
 }

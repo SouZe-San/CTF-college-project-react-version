@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import AllRoutes from "./AllRoutes";
-import BigNav from "./components/navbar/bigNav";
+// import BigNav from "./components/navbar/bigNav";
+import NavBar from "./components/navbar/navbar";
 // import Branding from "./components/branding/branding";
 function App() {
   useEffect(() => {
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
       <Router>
-        <BigNav />
+        {/* <BigNav /> */}
+        <NavBar/>
         <AllRoutes />
         {/* <Branding/> */}
       </Router>

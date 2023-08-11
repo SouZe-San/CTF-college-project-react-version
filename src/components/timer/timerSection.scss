@@ -1,9 +1,8 @@
 .countdown{
     margin: 4rem auto;
-    // border: 1px solid white;
     text-align: center;
     .timerTitle{
-        font-size: clamp(2.746rem, 6vw + .4rem , 3.19rem);
+        font-size: clamp(2.3rem, 6vw + .4rem , 3.19rem);
         text-transform: uppercase;
         line-height: 2.5rem;
         margin-bottom: 2rem;
@@ -19,9 +18,7 @@
         width: min(90%, 700px);
         border: 1px solid  rgba(255, 255, 255, 0.203);
         padding: 15px;
-        // gap: 1rem;
         .time-box{
-            // border: 1px solid green;
             span{
                 // display: block;
                 span{
@@ -30,12 +27,11 @@
             }
             .time{
                 font-family: "Monument Extended";
-                font-size: clamp(2.6rem, 6vw + 1.1rem , 5rem);
+                font-size: clamp(2rem, 6vw + 1rem , 5rem);
             }
         }
         .divider{
             font-size: 4rem;
-            // border: 1px solid orange;
         }
 
     }

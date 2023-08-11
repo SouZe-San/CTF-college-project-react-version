@@ -7,18 +7,31 @@
     position: relative;
     margin-bottom: 48px;
     .bg-title-stoked {
-      opacity: 0.6;
-      width: 45%;
+      opacity: 0.5;
+      // width: min(45%, 410px );
       position: relative;
       top: 0%;
+      height: 55px;
       left: 50%;
       transform: translate(-50%, 0%);
+      @media (max-width : 460px){
+        display: none;
+      }
     }
     .topicsTitle {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -47%);
+      font-size: clamp(1.9rem, 6vh + 0.8rem, 2.3rem);
+      text-shadow: 3px 2px 5px black;
+      @media (max-width : 460px){
+        position: relative;
+        text-align: center;
+      }
+    }
+    @media (max-width : 460px){
+      margin-bottom: 1rem;
     }
   }
   .topicContainer {
@@ -76,30 +89,6 @@
       }
     }
   }
-  .imageContainer {
-    display: none;
-    pointer-events: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    z-index: -1;
-    rotate: -25deg;
-    // scale: 0;
-    .someThing {
-      display: flex;
-      position: inherit;
-      gap: 50px;
-      transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-      .imageWrapper {
-        width: 200px;
-        position: relative;
-        overflow: hidden;
-        // rotate: -25deg;
-      }
-    }
-  }
 }
 
 @media (max-width: 680px) {
@@ -112,7 +101,7 @@
           display: none;
         }
         .topicName {
-          color: white;
+          color: rgb(190, 190, 190);
           span {
             display: none;
           }

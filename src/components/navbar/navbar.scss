@@ -12,7 +12,6 @@ nav {
   align-items: center;
   backdrop-filter: blur(32px);
   background-blend-mode: overlay;
-
   //   background-color: rgba(255, 255, 255, .08);
   background-color: rgba(85, 85, 85, 0.246);
   border-radius: 1rem;
@@ -27,11 +26,12 @@ nav {
     // border-radius: 50%;
   }
 
+
   .btns {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
     // border: 1px solid white;
-    width: 75%;
+    // width: 70%;
     align-items: center;
     font-family: "Poppins";
 

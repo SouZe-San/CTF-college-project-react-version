@@ -1,149 +1,90 @@
-.rewardsSection {
-  margin: 8rem auto;
-  .header {
-    position: relative;
-    .bg-title-stoked {
-      opacity: 0.6;
-      width: 45%;
-      position: relative;
-      top: 0%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-    }
-    .reawadsTitle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -47%);
-      font-size: clamp(1.6rem, 6vw + .7rem , 3rem);
-    }
+.outerCard {
+  width: min(90%, 53rem);
+  // border: 1px solid rgba(255, 255, 255, 0.364);
+  aspect-ratio: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  // position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: min(100vh, 800px);
+    background: radial-gradient(at 27% 37%, #3a8bfd 0, transparent 50%),
+      radial-gradient(at 97% 21%, #9772fe 0, transparent 50%),
+      radial-gradient(at 52% 99%, #fd3a4e 0, transparent 50%),
+      radial-gradient(at 10% 29%, #5afc7d 0, transparent 50%),
+      radial-gradient(at 97% 96%, #e4c795 0, transparent 50%),
+      radial-gradient(at 33% 50%, #8ca8e8 0, transparent 50%),
+      radial-gradient(at 79% 53%, #eea5ba 0, transparent 50%);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.39;
+    filter: blur(102px);
   }
-  .rewardCardsContainer {
-    .cards {
+
+  .innerCard {
+    // border: 1px solid rgba(210, 210, 210, 0.313);
+    width: 96%;
+    border-radius: inherit;
+    // background-color: rgba(0, 0, 0, 0.191);
+    // backdrop-filter: blur(32px) saturate(1.1) brightness(80%);
+    h1 {
+      text-align: center;
+    }
+    .header {
+      position: relative;
+      margin-bottom: 48px;
+      .bg-title-stoked {
+        opacity: 0.5;
+        width: 55%;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+      .rewardsTitle {
+        position: absolute;
+        // font-size: 2.2rem;
+        font-size: clamp(1.9rem, 6vh + 0.8rem, 2.3rem);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        text-shadow: 3px 2px 5px black;
+      }
+    }
+    .container {
       display: flex;
-      gap: 1.7rem;
-      width: 80%;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10rem;
-      .card {
-        perspective: 3000px;
-        overflow: hidden;
-        width: 90%;
-        height: 400px;
-        transform: translateZ(299px);
-        color: white;
-        border-radius: 17px;
-        border-top: 1px solid rgba(255, 254, 251, 0.4);
-        background-image: linear-gradient(
-          0deg,
-          hsl(153deg 66% 29%) 0%,
-          hsl(154deg 64% 24%) 11%,
-          hsl(147deg 20% 23%) 18%,
-          hsl(344deg 0% 17%) 27%,
-          hsl(360deg 1% 10%) 40%,
-          hsl(0deg 38% 3%) 85%
-        );
-
-        .outerBorder {
-          width: 100%;
-          height: 100%;
-          border-left: 1px solid rgba(255, 254, 251, 0.2);
-          border-right: 1px solid rgba(255, 254, 251, 0.2);
-          border-bottom: 1px solid rgba(255, 254, 251, 0.4);
-          border-radius: 1 17px;
-          filter: brightness(100%);
-          // opacity: 0.4;
-          .innerBorder {
-            margin: 3.5% 3.5% 2.5% 3.5%;
-            width: 93%;
-            height: 94%;
-            border-radius: 10px;
-            border: 1px solid rgba(238, 238, 238, 0.224);
-            background-color: rgba(47, 47, 47, 0.2);
-            backdrop-filter:  blur(32px);
-            background-blend-mode: overlay;
-            box-shadow: var(--shadow-elevation-medium);
-            // background-image: url(../../assets/gallery-images/grid-line.svg);
-
-            z-index: 2;
-            .topInfo {
-              position: relative;
-              h1 {
-                font-family: "Monument Extended", "Poppins";
-                text-align: center;
-              }
-              .numValue {
-                font-size: 6rem;
-                background-image: linear-gradient(
-                  180deg,
-                  hsl(153deg 66% 29%) 0%,
-                  hsl(154deg 64% 24%) 21%,
-                  hsl(147deg 20% 23%) 38%,
-                  hsl(344deg 0% 17%) 47%,
-                  hsla(0, 2%, 10%, 0.406) 60%,
-                  hsla(0, 1%, 32%, 0) 85%
-                );
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-              }
-              .stringValue {
-                opacity: 0.6;
-                font-size: 1.8rem;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, 0%);
-              }
+      align-items: center;
+      justify-content: space-evenly;
+      img {
+        filter: hue-rotate(300deg);
+      }
+      .content {
+        position: relative;
+        ul {
+          // border: 1px solid red;
+          transform: translate(10%, 0);
+          @media (min-width: 1024px) {
+            :nth-child(1) {
+              transform: translateX(1.3rem);
+            }
+            :nth-child(3) {
+              transform: translateX(10px);
             }
           }
-        }
-      }
-      .cardMain {
-        position: relative;
-        transform: translate(0, -25%);
-        background-image: linear-gradient(
-          0deg,
-          hsl(17deg 79% 37%) 0%,
-          hsl(17deg 84% 33%) 18%,
-          hsl(7deg 77% 26%) 27%,
-          hsl(360deg 76% 19%) 36%,
-          hsl(1deg 70% 14%) 49%,
-          hsl(0deg 38% 3%) 89%
-        );
-        .outerBorder {
-          .innerBorder {
-            .topInfoMain {
-              position: relative;
-              h1 {
-                font-family: "Monument Extended", "Poppins";
-                text-align: center;
-              }
-              .numValueMain {
-                font-size: 6rem;
-                background-image: linear-gradient(
-                  180deg,
-                  hsl(17deg 79% 37%) 0%,
-                  hsl(17deg 84% 33%) 18%,
-                  hsl(7deg 77% 26%) 27%,
-                  hsl(360deg 76% 19%) 36%,
-                  hsla(0, 39%, 15%, 0.655) 49%,
-                  hsla(0, 0%, 29%, 0.043) 79%
-                );
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-              }
-              .stringValue {
-                opacity: 0.6;
-                font-size: 1.8rem;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, 0%);
-              }
+
+          li {
+            margin-top: 2.2rem;
+            font-family: "Poppins";
+            font-size: 1.2rem;
+            @media (min-width: 1024px) {
+              margin-top: 3rem;
             }
           }
         }
@@ -152,29 +93,38 @@
   }
 }
 
-@media (max-width: 468px) {
-  .rewardsSection {
-    margin: 2rem 24px;
-    .header {
-      .bg-title-stoked {
-        opacity: 0;
-      }
-    }
-    .rewardCardsContainer {
-      .cards {
-        display: grid;
-        width: 100%;
-        margin-top: 1.5rem;
-        .card {
-          margin: 0.1rem auto;
-          width: 90%;
-          height: 400px;
+.rewardsSection {
+  margin: 3rem auto;
+}
+
+@media (max-width: 460px) {
+  .outerCard {
+    .innerCard {
+      .header {
+        img {
+          display: none;
         }
-        .cardMain {
-          position: relative;
-          top: 0;
-          order: -1;
-          transform: translateY(0);
+        .rewardsTitle {
+          font-size: 2rem;
+        }
+      }
+      .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .content {
+          ul {
+            transform: translateX(0);
+            margin: 0.9rem auto;
+            text-align: center;
+            li {
+              font-size: initial;
+              transform: translateX(0);
+            }
+          }
+        }
+        .imageSection {
+          width: 90%;
         }
       }
     }
