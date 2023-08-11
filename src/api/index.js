@@ -10,8 +10,43 @@ const API = axios.create({
   withCredentials: true,
 });
 
-export const logIn = (authData) => API.post("/login", authData);
+// Authentication Request
+export const authentication = (authData) => API.post("/login", authData);
+
+// Challenges  Request
 export const getAllChallenges = () =>
   API.get("/challenges", {
     headers: { Cookie: "teamId=TNU2730" },
   });
+
+// Dashboard Request
+export const getRankUpdate = () =>
+  API.get("/dashboard", {
+    headers: { Cookie: "teamId=TNU2730" },
+  });
+
+// User Details Request
+export const getUserDetails = () =>
+  API.get("/id", {
+    headers: { Cookie: "teamId=TNU2730" },
+  });
+
+// Flag Submit Request
+export const flagSend = (flagData) =>
+  API.post(
+    "/submit",
+    {
+      headers: { Cookie: "teamId=TNU2730" },
+    },
+    flagData
+  );
+
+// Spawn Request
+export const spawnCall = (challengeId) =>
+  API.post(
+    "/spawn",
+    {
+      headers: { Cookie: "teamId=TNU2730" },
+    },
+    challengeId
+  );
