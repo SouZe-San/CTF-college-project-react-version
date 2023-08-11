@@ -7,11 +7,10 @@
     // max-width: 60%;
     // min-height: 63vh;
     // width: min(90% , 933);
-    width: min(60%, 933px);
+    width: min(80%, 933px);
     aspect-ratio: 2/1.2;
     margin-top: 5rem;
     justify-content: space-between;
-
     .page_details {
         width: 45%;
         background: url('../../assets/login_bg.webp') no-repeat;
@@ -31,24 +30,47 @@
     // }
 }
 
-@media (max-width : 460px) {
+@media (max-width : 470px) {
+    .loginContainer{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     .card_case {
-        margin: auto 15px;
-        flex-direction: column;
+        border: none;
+        display: block;
         width: 100%;
-        height: auto;
-
+        // position: relative;
         .page_details {
-            width: 100%;
-            aspect-ratio: 1;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // transform: translateY(-8rem);
+            height: 100vh;
+            background-size: contain;
+            mask-image: linear-gradient( transparent , black 31% );
+        mask-repeat: no-repeat;
+        mask-size: cover;
         }
 
         .page_input {
-            // border: 1px solid white;
-            margin-top: 1.2rem;
-            margin-bottom: 2.2rem;
-
+            position: absolute;
+            // margin-top: 1.2rem;
+            // margin-bottom: 2.2rem;
+            width: 84%;
+            height: 400px;
+            left: 8%;
+            bottom: 4%;
+            z-index: 1;
+            background-color: rgba(65, 65, 65, 0.2);
+            backdrop-filter: blur(16px);
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.104);
         }
 
     }
+}
 }

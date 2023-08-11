@@ -29,6 +29,7 @@ const InputCard = () => {
       alert(" Give Valid Inputs :) ");
     }
   };
+
   
   return (
     <>

@@ -28,9 +28,11 @@ function bigNav() {
           </ul>
         </div>
         <div className="cta_btns">
+        <Link to="/login">
           <button className="">
-            <Link to="/login">Log in</Link>
+           Log in
           </button>
+          </Link>
         </div>
       </div>
     </nav>
