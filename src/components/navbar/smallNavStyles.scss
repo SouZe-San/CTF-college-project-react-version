@@ -1,0 +1,23 @@
+.smallNavigation {
+  width: 80vw;
+  height: 48px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  z-index: 200;
+  transform: translateX(-50%);
+  align-items: center;
+  backdrop-filter: blur(32px);
+  background-blend-mode: overlay;
+  background-color: rgba(85, 85, 85, 0.246);
+  border-radius: 1rem;
+  border: 1px solid #ffffff2f;
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.4117647059);
+}
+li {
+  svg {
+    width: 28px;
+    // fill: white!important;
+    filter: invert(1);
+  }
+}
