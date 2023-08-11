@@ -6,18 +6,23 @@
   left: 50%;
   z-index: 200;
   transform: translateX(-50%);
-  align-items: center;
   backdrop-filter: blur(32px);
   background-blend-mode: overlay;
   background-color: rgba(85, 85, 85, 0.246);
   border-radius: 1rem;
   border: 1px solid #ffffff2f;
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.4117647059);
-}
-li {
-  svg {
-    width: 28px;
-    // fill: white!important;
-    filter: invert(1);
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    li {
+      svg {
+        width: 28px;
+        filter: invert(1);
+      }
+    }
   }
 }
