@@ -6,10 +6,8 @@ import Rewards from "../../components/rewards/rewards";
 import Topics from "../../components/topics/topics";
 import Rules from "../../components/gameRules/rules";
 import Footer from "../../components/footer/footer";
-// import Branding from "../../components/branding/branding";
-import "./home.css"
 
-const home = () => {
+const Home = () => {
   const targetDate = new Date("2023-12-31T00:00:00");
   return (
     <div className="main">
@@ -19,9 +17,8 @@ const home = () => {
       <Topics/>
       <Rules/>
       <Footer/>
-      {/* <Branding/> */}
     </div>
   );
 };
 
-export default home;
+export default Home;
