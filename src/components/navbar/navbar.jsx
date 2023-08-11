@@ -15,7 +15,10 @@ function NavBar() {
     //   window.removeEventListener("resize", () => console.log("removed"));
   }, [resizeTheWidth]);
 
-  return <nav className="text-white">{resizeTheWidth ? <BigNav /> : <SmallNav />}</nav>;
+  return( 
+    
+    resizeTheWidth ? <BigNav /> : <SmallNav />);
 }
 
 export default NavBar;
+

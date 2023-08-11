@@ -4,27 +4,33 @@ import profileSvg from "../../assets/nav-section-svgs/user_line.svg";
 
 function SmallNav() {
   return (
-    <div className="btns ">
-      <div className="menu flex justify-between">
-        <ul>
-          <li>
-            <Link to="/">{homeSvg}</Link>
-          </li>
-          <li>
-            <Link to="/#RewardsSection">Rewards</Link>
-          </li>
-          <li>
-            <Link to="/#TopicsSection">Topics</Link>
-          </li>
-          <li>
-            <Link to="/#RulesSection">Rules</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">{profileSvg}</Link>
-          </li>
-        </ul>
+    <nav>
+      <div className="btns ">
+        <div className="menu flex justify-between">
+          <ul>
+            <li>
+              <Link to="/">
+                <img src={homeSvg} alt="" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/#RewardsSection">R</Link>
+            </li>
+            <li>
+              <Link to="/#TopicsSection">Topics</Link>
+            </li>
+            <li>
+              <Link to="/#RulesSection">Rules</Link>
+            </li>
+            <li>
+              <Link to="/dashboard">
+                <img src={profileSvg} alt="" />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
