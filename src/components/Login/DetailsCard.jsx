@@ -5,7 +5,7 @@ import "./detailsCard.scss";
 const DetailsCard = () => {
   return (
     <>
-      <h1>
+      {/* <h1>
         <span
           style={{
             fontSize: "3rem",
@@ -42,19 +42,19 @@ const DetailsCard = () => {
         >
           Flag
         </span>
-      </h1>
+      </h1> */}
       {/* <img
         // className="absolute"
         alt="This is"
         src={frddd2}
         // style={{ filter: "drop-shadow(0px 13px 22px #2f8551b8)" }}
       /> */}
-      <h1
+      {/* <h1
         className="bottomLine
           "
       >
         Lets Join In War
-      </h1>
+      </h1> */}
     </>
   );
 };

@@ -9,7 +9,7 @@ const page = () => {
   // const userDetails = null;
   // const rankersList = null;
   return (
-    <div className="mb-8 mt-32">
+    <div className="my-32">
       {rankersList && userDetails ? (
         <RankingBlock rankersList={rankersList} userDetails={userDetails} />
       ) : (
