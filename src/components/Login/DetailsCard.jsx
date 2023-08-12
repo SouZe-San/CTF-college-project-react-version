@@ -60,3 +60,4 @@ const DetailsCard = () => {
 };
 
 export default DetailsCard;
+
