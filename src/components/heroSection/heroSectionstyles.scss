@@ -1,51 +1,58 @@
-.heroSection{
+.heroSection {
 	width: 100vw;
 	height: 800px;
 	overflow: hidden;
 	position: relative;
-	.overlay{
+
+	.overlay {
 		text-align: center;
 		z-index: 4;
 		color: rgb(255, 255, 255);
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%,-50%);
-		.overlayContent{
-			.neoIntroduction{
+		transform: translate(-50%, -50%);
+
+		.overlayContent {
+			.neoIntroduction {
 				width: 230px;
 				margin: 5px auto;
-				@media (max-width  : 620px){
+
+				@media (max-width : 620px) {
 					width: 205px;
 				}
 			}
-			.heroSectionTitle{
-				font-size: clamp(2.2rem , 8vw + 1rem , 7.1rem);
+
+			.heroSectionTitle {
+				font-size: clamp(2.2rem, 8vw + 1rem, 7.1rem);
 				// font-size: clamp(1.875rem,3.125vw + 1.25rem,4.0625rem);
-				font-family:  "Monument Extended" , "Poppins";
+				font-family: "Monument Extended", "Poppins";
 				letter-spacing: -1px;
 				line-height: .8;
-				.lowerTitle{
+
+				.lowerTitle {
 					white-space: nowrap;
-					font-size: clamp(2.3rem , 8vw + .9rem , 6.7rem);
+					font-size: clamp(2.3rem, 8vw + .9rem, 6.7rem);
 				}
 			}
-			.tagline{
+
+			.tagline {
 				font-size: 1rem;
 				color: rgb(199, 199, 199);
 				margin: 1rem 10px;
-				font-family:  "Monument Extended", "Poppins";
+				font-family: "Monument Extended", "Poppins";
 				letter-spacing: 1px;
-				@media (max-width  : 620px){
+
+				@media (max-width : 620px) {
 					font-size: .7rem;
 				}
 			}
-			.ctaBtnOfHero{
+
+			.ctaBtnOfHero {
 				padding: 15px 25px;
-				// background-color: rgb(190, 249, 79);
-				// background-color: rgb(190, 249, 79);
+
 				background-color: #ff6700;
-				// background-color: #cad874;
+
 				border-radius: 1rem;
 				margin-top: 1rem;
 				color: black;
@@ -55,4 +62,3 @@
 		}
 	}
 }
-

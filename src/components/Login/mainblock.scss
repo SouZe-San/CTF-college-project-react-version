@@ -1,76 +1,65 @@
 .card_case {
     border: 1px solid rgba(187, 188, 188, 0.367);
     border-radius: 10px;
-    // background: #a1a7a21f;
-    // background: linear-gradient(290deg, rgba(3, 168, 170, 0.9019607843), transparent 58%);
-    // backdrop-filter: blur(5px) saturate(5);
-    // max-width: 60%;
-    // min-height: 63vh;
-    // width: min(90% , 933);
     width: min(80%, 933px);
     aspect-ratio: 2/1.2;
     margin-top: 5rem;
     justify-content: space-between;
+
     .page_details {
         width: 45%;
         background: url('../../assets/login_bg.webp') no-repeat;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         padding: 1.4rem;
-        // background: no-repeat;
+
         background-size: contain;
         background-position: center;
-        // filter: drop-shadow(0px 7px 23px rgba(47, 133, 90, 0.7215686275));
+
         backdrop-filter: saturate(1);
     }
-
-    // .page_input {
-    //     width: 50%;
-    //     background: linear-gradient(82deg, #03a8aae6, transparent 95%);
-    // }
 }
 
 @media (max-width : 470px) {
-    .loginContainer{
+    .loginContainer {
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-    .card_case {
-        border: none;
-        display: block;
-        width: 100%;
-        // position: relative;
-        .page_details {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            position: absolute;
-            top: 0;
-            left: 0;
-            // transform: translateY(-8rem);
-            height: 100vh;
-            background-size: contain;
-            mask-image: linear-gradient( transparent , black 31% );
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        }
 
-        .page_input {
-            position: absolute;
-            // margin-top: 1.2rem;
-            // margin-bottom: 2.2rem;
-            width: 84%;
-            height: 400px;
-            left: 8%;
-            bottom: 4%;
-            z-index: 1;
-            background-color: rgba(65, 65, 65, 0.2);
-            backdrop-filter: blur(16px);
-            border-radius: 1.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.104);
-        }
+        .card_case {
+            border: none;
+            display: block;
+            width: 100%;
 
+            .page_details {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                height: 100vh;
+                background-size: contain;
+                mask-image: linear-gradient(transparent, black 31%);
+                mask-repeat: no-repeat;
+                mask-size: cover;
+            }
+
+            .page_input {
+                position: absolute;
+                width: 84%;
+                height: 400px;
+                left: 8%;
+                bottom: 4%;
+                z-index: 1;
+                background-color: rgba(65, 65, 65, 0.2);
+                backdrop-filter: blur(16px);
+                border-radius: 1.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.104);
+            }
+
+        }
     }
-}
 }

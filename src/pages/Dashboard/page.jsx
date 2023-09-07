@@ -6,8 +6,6 @@ import NotValid from "../../components/notValid/NotValid";
 import { userDetails, rankersList } from "../../assets/Json/dashboard";
 
 const page = () => {
-  // const userDetails = null;
-  // const rankersList = null;
   return (
     <div className="my-32">
       {rankersList && userDetails ? (

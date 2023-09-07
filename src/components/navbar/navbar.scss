@@ -12,18 +12,16 @@ nav {
   align-items: center;
   backdrop-filter: blur(32px);
   background-blend-mode: overlay;
-  //   background-color: rgba(255, 255, 255, .08);
   background-color: rgba(85, 85, 85, 0.246);
   border-radius: 1rem;
   border: 1px solid #ffffff2f;
-  // box-shadow: 2px 2px rgba(0, 0, 0, 0.2), 0 20px 25px rgba(0, 0, 0, 0.5);
-  // box-shadow: 2px 2px rgba(22, 22, 22, 0.2), 0 20px 25px rgba(0, 0, 0, 0.2);
+
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.4117647059);
+
   .logo {
     font-size: 1.1rem;
     font-weight: bolder;
-    // background-color: #091A1A;
-    // border-radius: 50%;
+
   }
 
 
@@ -38,7 +36,6 @@ nav {
     .menu {
       ul {
         display: flex;
-        // border : 1px solid white;
         gap: 3rem;
         align-items: center;
 
@@ -46,7 +43,6 @@ nav {
           list-style: none;
           font-size: 0.9rem;
 
-          // border: 1px solid white;
           a {
             text-decoration: none;
             color: white;

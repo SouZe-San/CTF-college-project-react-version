@@ -11,17 +11,10 @@ function NavBar() {
       console.log(resizeTheWidth);
     });
 
-    return () =>
-      window.removeEventListener("resize", () => console.log("removed"));
+    return () => window.removeEventListener("resize", () => console.log("removed"));
   }, [resizeTheWidth]);
 
-  // return( 
-
-  //   resizeTheWidth ? <BigNav /> : <SmallNav />);
-  return (
-    window.innerWidth >= 960 ? <BigNav/> : <SmallNav/>
-  )
+  return window.innerWidth >= 960 ? <BigNav /> : <SmallNav />;
 }
 
 export default NavBar;
-

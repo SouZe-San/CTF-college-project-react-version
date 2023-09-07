@@ -3,9 +3,11 @@
   color: white;
   font-size: 50px;
   margin: 4rem auto;
+
   .header {
     position: relative;
     margin-bottom: 48px;
+
     .bg-title-stoked {
       opacity: 0.5;
       // width: min(45%, 410px );
@@ -14,10 +16,12 @@
       height: 55px;
       left: 50%;
       transform: translate(-50%, 0%);
-      @media (max-width : 460px){
+
+      @media (max-width : 460px) {
         display: none;
       }
     }
+
     .topicsTitle {
       position: absolute;
       top: 50%;
@@ -25,27 +29,32 @@
       transform: translate(-50%, -47%);
       font-size: clamp(1.9rem, 6vh + 0.8rem, 2.2rem);
       text-shadow: 3px 2px 5px black;
-      @media (max-width : 460px){
+
+      @media (max-width : 460px) {
         position: relative;
         text-align: center;
       }
     }
-    @media (max-width : 460px){
+
+    @media (max-width : 460px) {
       margin-bottom: 1rem;
     }
   }
+
   .topicContainer {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+
     .marqueeContainer {
       position: absolute;
       opacity: 0;
       width: 100%;
       height: 100%;
       overflow: hidden;
+
       .topicSectionTitle {
         width: 100%;
         height: 100%;
@@ -56,6 +65,7 @@
         animation: marquee 20s linear infinite;
       }
     }
+
     .topicWrapper {
       display: flex;
       align-items: center;
@@ -64,13 +74,15 @@
       margin-bottom: 4px;
       font-family: "Arame";
       overflow-x: hidden;
-      // gap: 1rem;
+
       position: relative;
       transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       border-bottom: 1px solid rgba(177, 177, 177, 0.449);
+
       &:hover .topicId {
         transform: translateX(15px);
       }
+
       &:hover .topicName {
         color: white;
         transform: translateX(-10px);
@@ -80,8 +92,9 @@
         font-size: 2rem;
         transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
       }
+
       .topicName {
-        // font-weight: 600;
+
         -webkit-text-stroke: 1px;
         -webkit-text-stroke-color: rgba(255, 255, 255, 0.819);
         color: transparent;
@@ -94,14 +107,18 @@
 @media (max-width: 680px) {
   .topicsSection {
     font-size: 2rem;
+
     .topicContainer {
       .topicWrapper {
         left: 0;
+
         .topicId {
           display: none;
         }
+
         .topicName {
           color: rgb(190, 190, 190);
+
           span {
             display: none;
           }

@@ -7,17 +7,13 @@
     font-size: 3.8rem;
     font-weight: bolder;
     padding-bottom: 0.5rem;
-    // color: #78F251;
     color: #65e065bd;
-    // backdrop-filter: blur(64px) saturate(190%) brightness(70%);
-    // text-shadow: 2px 4px 13px #469236;
     font-family: "Kanit", sans-serif;
   }
 
   h3 {
     color: #d3d3d3c2;
     font-size: 1.2rem;
-    // font-family: "Poppins";
   }
 }
 
@@ -30,6 +26,7 @@
   padding: 13px 10px;
   box-shadow: 2px 2px rgba(22, 22, 22, 0.2), 0 20px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5rem;
+
   .active_sort {
     background: #65e065aa;
     color: white;
@@ -52,6 +49,7 @@
     margin: 0 0.5rem;
     border-radius: 8px;
     transition: all 0.2s ease-in-out;
+
     svg {
       width: 1.1rem;
       display: inline;
@@ -59,6 +57,7 @@
 
     &:hover {
       color: #a2fde3;
+
       svg {
         path {
           fill: #a2fde3;
@@ -68,5 +67,4 @@
   }
 }
 
-@media (max-width: 460px) {
-}
+@media (max-width: 460px) {}
