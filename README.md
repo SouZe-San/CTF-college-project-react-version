@@ -1,24 +1,9 @@
-# React + Vite
+# NeoCTF - Conquer the flag
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This is a CTF game page, created for a CTF GAME that was hosted in our college. Player come with their team and win the challenges with their team play and knowledge.
+- NoFilter Agency created this page
+- Visit this page.
+- Feel free to contact, for any needs
+## Take A LOOK
+![First-official-group-work-for-neo-ctf-webpage-landing-page](https://github.com/SouZe-San/CTF-college-project-react-version/assets/103335953/909b5f00-8688-4406-977b-8745ab5f4657)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:5173](http://localhost:5273) with your browser to see the result.
-
-You can start editing the page by modifying `src/app.jsx`. The page auto-updates as you edit the file.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
