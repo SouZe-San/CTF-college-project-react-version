@@ -1,7 +1,7 @@
 # NeoCTF - Conquer the flag
 
 - This is a CTF game page, created for a CTF GAME that was hosted in our college. Player come with their team and win the challenges with their team play and knowledge.
-- NoFilter Agency created this page
+- **_NoFilter Agency_** created this page
 - Visit this page.
 - Feel free to contact, for any needs
 ## Take A LOOK
